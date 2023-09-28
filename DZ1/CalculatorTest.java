@@ -1,4 +1,4 @@
-package com.example.unittest.Seminars.First.DZ1;
+package com.example.unittest.Seminars.DZ1;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

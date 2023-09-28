@@ -1,4 +1,4 @@
-package com.example.unittest.Seminars.First.DZ1;
+package com.example.unittest.Seminars.DZ1;
 
 public class Calculator {
     public static int calculation(int firstOperand, int secondOperand, char operator) {
