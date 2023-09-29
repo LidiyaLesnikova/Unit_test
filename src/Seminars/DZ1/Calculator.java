@@ -1,4 +1,4 @@
-package com.example.unittest.Seminars.DZ1;
+package Seminars.DZ1;
 
 public class Calculator {
     public static int calculation(int firstOperand, int secondOperand, char operator) {
@@ -69,5 +69,14 @@ public class Calculator {
             }
         }
        return purchaseAmount - purchaseAmount*discountAmount/100;
+    }
+
+    public static int pow(int value, int powValue) {
+        int rezult = 1;
+        for (int i = 1; i <= powValue; i++) {
+            if (i==0) return 1;
+            rezult = rezult * value;
+        }
+        return rezult;
     }
 }

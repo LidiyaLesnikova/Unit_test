@@ -1,4 +1,4 @@
-package com.example.unittest.Seminars.DZ1;
+package Seminars.DZ1;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -55,10 +55,14 @@ public class CalculatorTest {
 
         System.out.println(Calculator.calculation(2_147_483_647, 1, '+')); // integer overflow
         System.out.println(Calculator.squareRootExtraction(169));
-        */
+
         assertThat(Calculator.calculatingDiscount(1000, 10)).isEqualTo(900);
         assertThat(Calculator.calculatingDiscount(1000, 0)).isEqualTo(1000);
         assertThat(Calculator.calculatingDiscount(1000, 120)).isEqualTo(0);
-        assertThat(Calculator.calculatingDiscount(1000, -10)).isEqualTo(1000);
+        assertThat(Calculator.calculatingDiscount(1000, -10)).isEqualTo(1000);*/
+        assertThat(Calculator.pow(10, 0)).isEqualTo(1);
+        assertThat(Calculator.pow(10, 1)).isEqualTo(10);
+        assertThat(Calculator.pow(2, 8)).isEqualTo(256);
+
     }
 }
