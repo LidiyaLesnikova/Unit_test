@@ -19,8 +19,8 @@ class BookServiceTest {
     void testBookService(){
         BookRepository bookRepositoryMock = mock(InMemoryBookRepository.class);
         List<Book> books = new ArrayList<Book>();
-        books.add(new Book("1", "Name1", "Autor1"));
-        books.add(new Book("2", "Name2", "Autor2"));
+        books.add(new Book("1", anyString(), anyString()));
+        books.add(new Book("2", anyString(), anyString()));
 
         when(bookRepositoryMock.findAll()).thenReturn(books);
         when(bookRepositoryMock.findById("1")).thenReturn(books.get(0));
