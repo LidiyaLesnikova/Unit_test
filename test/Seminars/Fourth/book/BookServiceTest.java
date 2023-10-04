@@ -29,5 +29,6 @@ class BookServiceTest {
 
         assertThat(bookService.findAllBooks()).isEqualTo(books);
         assertThat(bookService.findBookById("1")).isEqualTo(books.get(0));
+
     }
 }
